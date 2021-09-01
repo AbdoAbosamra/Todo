@@ -5,7 +5,10 @@
     <title>Title</title>
 </head>
 <body>
-<h2>Task</h2>
+
+<h2>Add New Task</h2>
+<a href="{% url 'tasks' %}">Go Back</a>
+
 <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
